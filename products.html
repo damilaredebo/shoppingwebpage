@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase - Peridot Closet</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f0e1; /* Brownish background color */
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #ffc0cb1c; /* Dark brown header background */
+      color: #ffffffdf;
+      padding: 10px;
+      text-align: center;
+    }
+    h1 {
+      color: #5c4033; /* Dark brown text color */
+    }
+
+    nav {
+      background-color: #8b735b; /* Light brown navigation background */
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #635045; /* Hover effect color */
+    }
+
+    .products-container {
+      display: flex;
+      overflow-x: auto;
+      padding: 10px;
+    }
+
+    .product-card {
+      width: 300px;
+      margin-right: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .product-images {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth; /* Enable smooth scrolling */
+    }
+
+    .product-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Peridot Closet <span>&#128087;</span></h1> <!-- Dress emoji added -->
+  </header>
+  <nav>
+    <a href="shop nav.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="login page.html">Login</a>
+    <a href="create account.html">Create Account</a>
+    <a href="#">Orders</a>
+    <a href="#">Cart</a>
+    <a href="#">Address</a>
+  </nav>
+
+  <h1>Featured Products</h1>
+
+  <div class="products-container">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <h2>DOPE FIT</h2>
+      <div class="product-images">
+        <img class="product-image" src="images/IMG_7266.JPG" alt="Product 1 - Sample 1">
+        <img class="product-image" src="images/IMG_7267.JPG" alt="Product 1 - Sample 2">
+        <img class="product-image" src="images/IMG_7269.JPG" alt="Product 1 - Sample 3">
+      </div>
+    </div>Z
+    <button class="add-to-cart-button" onclick="addToCart('Product 1')">Add to Cart</button>
+  </div>
+    </div>
+;
+    <!-- Product 2 -->
+    <div class="product-card">
+      <h2>Product 2</h2>
+      <div class="product-images">
+        <img class="product-image" src="product2_sample1.jpg" alt="Product 2 - Sample 1">
+        <img class="product-image" src="product2_sample2.jpg" alt="Product 2 - Sample 2">
+        <img class="product-image" src="product2_sample3.jpg" alt="Product 2 - Sample 3">
+      </div>
+    </div>
+
+    <!-- Add more product cards as needed -->
+
+  </div>
+
+  <script>
+    // Auto-scroll effect
+    document.querySelectorAll('.product-card').forEach(function(card) {
+      card.addEventListener('mouseover', function() {
+        card.querySelector('.product-images').scrollLeft += 8; // Adjust the scroll speed if needed
+      });
+    });
+  </script>
+  <script>
+    function addToCart(productName) {
+      // Add your logic here to handle adding the product to the cart
+      alert('Added ' + productName + ' to the cart!');
+    }
+  </script>
+</body>
+</html>

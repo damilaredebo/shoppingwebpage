@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Peridot Closet</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f0e1; /* Brownish background color */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #5c4033; /* Dark brown button background */
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #63483e; /* Hover effect color */
+    }
+
+    .social-login {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-login button {
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Login to Peridot Closet</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Login</button>
+
+    <div class="social-login">
+      <button onclick="loginWithGmail()">Login with Gmail</button>
+      <button onclick="loginWithFacebook()">Login with Facebook</button>
+      <button onclick="loginWithApple()">Login with Apple</button>
+    </div>
+    <p style="text-align: center; margin-top: 20px;">
+        Don't have an account? <a href="create account.html">Let's Go!!!</a>
+  </form>
+
+  <script>
+    function loginWithGmail() {
+      // Implement OAuth logic for Gmail login
+      alert('Logging in with Gmail');
+    }
+
+    function loginWithFacebook() {
+      // Implement OAuth logic for Facebook login
+      alert('Logging in with Facebook');
+    }
+
+    function loginWithApple() {
+      // Implement OAuth logic for Apple login
+      alert('Logging in with Apple');
+    }
+
+  </script>
+  
+  </p>
+</body>
+</html>
